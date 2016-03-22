@@ -1,0 +1,20 @@
+<!-- <h1 class="classname"></h1> -->
+<div class= "mainbox" id="title">
+	<h1>
+		Dimentale
+	</h1>
+</div>
+<div class="mainbox" id="halfbox">
+	<p>
+		Picture
+	</p>
+</div>
+<div class="mainbox" id="topqbox">
+	Question
+	<%= $memory %>
+</div>
+<div class="mainbox" id="botqbox">
+	<%= form_tag("/next", method: "post") do %>
+		<%=submit_tag :Next %>
+	<% end %>
+</div>
