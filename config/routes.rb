@@ -6,7 +6,14 @@ Rails.application.routes.draw do
   root 'home_page#index'
 
   post '/next', to: 'home_page#next'
-
+  post '/no', to: 'home_page#no'
+  post '/yes', to: 'home_page#yes'
+  post '/1', to: 'home_page#next'
+  post '/2', to: 'home_page#next'
+  post '/enter', to: 'home_page#enter'
+  post '/answer', to: 'home_page#answer'
+  get '/next', to: 'home_page#next'
+  get '/re', to: 'home_page#re'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
